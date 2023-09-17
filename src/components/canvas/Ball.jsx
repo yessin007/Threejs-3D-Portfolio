@@ -36,22 +36,37 @@ const Ball = (props) => {
     </Float>
   );
 };
-
+//
+// const BallCanvas = ({ icon }) => {
+//   return (
+//     <Canvas
+//       frameloop="demand"
+//       dpr={[1, 2]}
+//       gl={{ preserveDrawingBuffer: true }}
+//     >
+//       <Suspense fallback={<CanvasLoader />}>
+//         <OrbitControls enableZoom={false} />
+//         <Ball imgUrl={icon} />
+//       </Suspense>
+//
+//       <Preload all />
+//     </Canvas>
+//   );
+// };
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      frameloop="demand"
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
-      </Suspense>
+      <Canvas
+          frameloop="always" // Higher value for smoother movement
+          dpr={[1, 2]} // Adjust as needed for visual quality/performance trade-off
+          gl={{ preserveDrawingBuffer: true, shadow: true }} // Enable shadows
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls enableZoom={false} />
+          <Ball imgUrl={icon} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
   );
 };
-
 export default BallCanvas;
