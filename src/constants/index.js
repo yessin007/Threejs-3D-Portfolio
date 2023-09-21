@@ -23,6 +23,27 @@ import {
   jobit,
   tripguide,
   threejs,
+  metamask,
+  jenkins,
+  maven,
+  prometheus,
+  grafana,
+  nexus,
+  angular,
+  net,
+  mysql,
+  spring,
+  solarchain,
+  cocomarket,
+  astree,
+  mydevup,
+    un,
+    deux,
+  tensorflow,
+  yk,
+  global,
+  resume,
+  yessin,
 } from "../assets";
 
 export const navLinks = [
@@ -38,133 +59,138 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "resume",
+    title: "Resume",
+    resume: resume,
+  },
+
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Blockchain",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "DevOps",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Finance  Economics",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Tennis",
     icon: creator,
   },
 ];
 
 const technologies = [
+
   {
-    name: "HTML 5",
-    icon: html,
+    name: "spring",
+    icon: spring,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "net",
+    icon: net,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
+    name: "angular",
+    icon: angular,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "nexus",
+    icon: nexus,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "maven",
+    icon: maven,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
+    name: "mysql",
+    icon: mysql,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "metamask",
+    icon: metamask,
+  },
+  {
+    name: "jenkins",
+    icon: jenkins,
+  },
+  {
+    name: "prometheus",
+    icon: prometheus,
+  },
+  {
+    name: "grafana",
+    icon: grafana,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Blockchain Developer Intern",
+    company_name: "MyDevUp",
+    icon: metamask,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2023 - September 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing a decentralized application (DAPP) for a solar panel campaign.",
+      "Implementing smart contract functionality using Solidity and integrated it with a React front-end.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Enabled secure transactions and seamless integration with blockchain technology.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Freelance",
+    company_name: "Fiver",
+    icon: net,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2023 - June 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining dating website applications inspired by Tinder, using .NET and Angular. This dynamic and responsive platform offers users a seamless and engaging dating experience",
+      "Key features of the website include a swipe-based matching system, real-time messaging, user profiles with customizable preferences, location-based search functionality, and personalized recommendations. By leveraging the capabilities of .NET on the backend, I ensured efficient data storage, secure authentication.",
     ],
   },
+  // {
+  //   title: "Web Developer",
+  //   company_name: "Shopify",
+  //   icon: shopify,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Machine Learning Developer Intern",
+    company_name: "MyDevUp",
+    icon: tensorflow,
+    iconBg: "#383E56",
+    date: "July 2022 - September 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Analyzing data sets and designing algorithms to detect pets with accurate model.",
+      "Developing a robust image detection system, leveraging TensorFlow and OpenCV to accurately detect and classify various objects, with a specific emphasis on pet detection.",
+      "Utilizing deep learning techniques and TensorFlow's powerful neural network models to train and fine-tune object detection models for image recognition tasks, achieving high accuracy in pet detection.",
+
     ],
   },
 ];
@@ -198,67 +224,76 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Solar Chain",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Solar panel crowdfunding  platform allows individuals to launch campaigns, showcase their projects, connect with potential backers and seek financial support from the community.",
     tags: [
       {
-        name: "react",
+        name: "Solidity",
         color: "blue-text-gradient",
+        image: html,
       },
       {
-        name: "mongodb",
+        name: "React",
         color: "green-text-gradient",
+        image: html,
       },
       {
-        name: "tailwind",
+        name: "WEB3",
         color: "pink-text-gradient",
+        image: html,
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: solarchain,
+    source_code_link: "https://github.com/yessin007/Solar-Chain-Solidity-React",
   },
   {
-    name: "Job IT",
+    name: "CocoMarket",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Online platform allows businesses to configure and manage products (both physical and digital) across multiple sellers and for buyers where they purchase  goods and services on demand.",
     tags: [
       {
-        name: "react",
+        name: "Spring Boot",
         color: "blue-text-gradient",
+        image: html,
       },
       {
-        name: "restapi",
+        name: "Angular",
         color: "green-text-gradient",
+        image: html,
       },
       {
-        name: "scss",
+        name: "RestApi",
         color: "pink-text-gradient",
+        image: html,
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: cocomarket,
+    source_code_link: "https://github.com/yessin007/CocoMarket_Spring_Angular",
   },
   {
-    name: "Trip Guide",
+    name: "Astree",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Comprehensive insurance dashboard platform that allows users to manage contracts, assign and manage reinsurance, while providing insights into profit versus liability.",
     tags: [
       {
-        name: "nextjs",
+        name: ".NET Core",
         color: "blue-text-gradient",
+        image: html,
       },
       {
-        name: "supabase",
+        name: "React",
         color: "green-text-gradient",
+        image: html,
       },
       {
-        name: "css",
+        name: "JavaScript",
         color: "pink-text-gradient",
+        image: html,
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: astree,
+    source_code_link: "https://github.com/yessin007/Astree-Insurance-Management-react-.NET",
   },
 ];
 

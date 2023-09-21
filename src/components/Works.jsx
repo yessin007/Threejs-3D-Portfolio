@@ -26,6 +26,7 @@ const ProjectCard = ({
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
+            class="zoomable-image image-zoom"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div

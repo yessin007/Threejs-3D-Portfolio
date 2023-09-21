@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { yessin, global, logo, menu, close } from "../assets";
+import {yk} from "../assets";
+import  resume from "../assets/Yessin Khlif Resume ENG.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -62,25 +64,30 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={global} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Liron &nbsp;
-            <span className="sm:block hidden"> | 3D Portfolio</span>
+            Yessin &nbsp;
+            <span className="sm:block hidden"> |  Portfolio</span>
           </p>
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.id ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
+              <li
+                  key={nav.id}
+                  className={`${
+                      active === nav.id ? "text-white" : "text-secondary"
+                  } hover:text-white text-[18px] font-medium cursor-pointer`}
+              >
+                {nav.title === "Resume" ? (
+                    <a href={resume} download="Yessin Khlif Resume">{nav.title}</a>
+                ) : (
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                )}
+              </li>
           ))}
         </ul>
+
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -106,6 +113,7 @@ const Navbar = () => {
                     setToggle(!toggle);
                   }}
                 >
+
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
